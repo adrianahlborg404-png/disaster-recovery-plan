@@ -122,8 +122,25 @@ flowchart TD
 
 ## Vad jag lärde mig
 
-<!-- Skriv 3–5 meningar med egna ord. Frågor att utgå från:
-     Vad var nytt för dig? Vad var svårast, och hur löste ni det?
-     Vad skulle du göra annorlunda nästa gång? -->
 
-[Skriv dina egna reflektioner här.]
+
+## Vad jag lärde mig
+
+- Den viktigaste lärdomen är att en backup bara är värd något om man har testat
+att återställa den. Det var först när vi faktiskt kraschade miljön och byggde
+upp den igen som vi visste att planen fungerade.
+
+- Jag lärde mig också hur mycket ordningen spelar roll. Servrarna är beroende av
+varandra, så filservern fungerar inte förrän AD och DNS är uppe, och ingenting
+kommunicerar utan brandväggen. Att tänka igenom beroendena innan man börjar
+återställa sparar mycket tid när något väl har gått fel.
+
+- Challenge-testet visade att en backup måste fungera även på ny hårdvara.
+Där lärde jag mig att virtuella switchar och nätverkskort kan skilja sig mellan
+olika hostar, och att servrarna kan starta utan att kunna prata med varandra om
+nätverket inte är rätt kopplat.
+
+- Att använda flera metoder parallellt, som VM-export, XML-backup av pfSense,
+System State-backup och Robocopy, gav oss flera vägar tillbaka om en metod
+skulle strula. Jag lärde mig också att krypterade backuper kräver en plan för
+lösenordet, annars går de inte att använda när man väl behöver dem.
