@@ -140,3 +140,7 @@ nätverket inte är rätt kopplat.
 System State-backup och Robocopy, gav oss flera vägar tillbaka om en metod
 skulle strula. Jag lärde mig också att krypterade backuper kräver en plan för
 lösenordet, annars går de inte att använda när man väl behöver dem.
+
+---
+
+*Fler projekt finns på min [GitHub-profil](https://github.com/adrianahlborg404-png).*
